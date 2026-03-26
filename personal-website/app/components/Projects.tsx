@@ -25,7 +25,12 @@ export default function Projects() {
         </div>
         <div className="grid gap-6">
           {projects.map((project, i) => (
-            <div key={project.id} className="reveal group relative border border-[var(--border)] bg-[var(--surface)] p-8 hover:border-[var(--accent)] transition-all duration-300" style={{ transitionDelay: `${i * 100}ms` }}>
+            <div key={project.id} className="reveal group hero-hud relative border border-[var(--border)] bg-[var(--surface)] p-8 hover:border-[var(--accent)] transition-all duration-300" style={{ transitionDelay: `${i * 100}ms` }}>
+              
+          <div className="hero-hud-corner hero-hud-corner-tl hover:border-[var(--accent)]" />
+          <div className="hero-hud-corner hero-hud-corner-tr hover:border-[var(--accent)]" />
+          <div className="hero-hud-corner hero-hud-corner-bl hover:border-[var(--accent)]" />
+          <div className="hero-hud-corner hero-hud-corner-br hover:border-[var(--accent)]" />
               <div className="absolute top-0 left-0 w-3 h-3 bg-[var(--accent)] opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                 <div className="flex-1">
