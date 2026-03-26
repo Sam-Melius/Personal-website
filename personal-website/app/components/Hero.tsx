@@ -33,7 +33,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen mx-24 px-6 md:px-10 pt-20 flex items-center">
+    <section className="relative min-h-screen lg:mx-24 px-6 md:px-10 pt-20 flex items-center">
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="hero-hud w-full max-w-3xl">
           <div className="hero-hud-corner hero-hud-corner-tl" />
