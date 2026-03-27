@@ -297,3 +297,75 @@ body::before {
     transform: translateY(36px);
   }
 }
+
+.project-shot {
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.project-shot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.project-shot-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 12, 16, 0.02) 0%,
+      rgba(8, 12, 16, 0.10) 45%,
+      rgba(8, 12, 16, 0.72) 100%
+    ),
+    radial-gradient(
+      circle at 20% 15%,
+      rgba(192, 132, 252, 0.14),
+      transparent 30%
+    );
+  pointer-events: none;
+}
+
+.project-shot-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.12;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.08) 0,
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  mix-blend-mode: soft-light;
+}
+
+.project-shot-glow {
+  position: absolute;
+  inset: -20%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  background: radial-gradient(
+    circle,
+    rgba(192, 132, 252, 0.22) 0%,
+    rgba(192, 132, 252, 0.08) 25%,
+    transparent 60%
+  );
+}
+
+.group\/image:hover .project-shot-glow {
+  opacity: 1;
+}

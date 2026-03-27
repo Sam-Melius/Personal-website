@@ -16,7 +16,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Sanity"],
     url: "https://www.clutchbowling.com/",
     github: "https://github.com/Sam-Melius/clutch-bowling",
-    image: "/public/clutch-logo-white.png",
+    image: "/ClutchBowling.png",
     year: "2024",
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Sanity"],
     url: "https://reverie-git-main-sam-melius-oxfords-projects.vercel.app/",
     github: "https://github.com/Sam-Melius/reverie",
-    image: "/public/LogoWhiteText.png",
+    image: "/ReverieVercel.png",
     year: "2025",
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     description: "Built a high-performance web platform for Reverie Tech using modern frontend technologies, emphasizing responsive design and structured presentation of IT and cybersecurity services. The site was later migrated to WordPress to align with marketing agency requirements and enable more flexible content management.",
     tags: ["WordPress"],
     url: "https://www.reverietech.com/",
-    image: "/public/LogoWhiteText.png",
+    image: "/ReverieWordpress.png",
     year: "2026",
   },
 ];
