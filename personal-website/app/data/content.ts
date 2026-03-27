@@ -1,8 +1,8 @@
 export const personal = {
   name: "Sam Melius-Oxford",
   title: "Full-Stack Developer",
-  tagline: "I build fast, clean web apps that people actually enjoy using.",
-  bio: "Based somewhere on Earth. Passionate about great developer experience, pixel-perfect UI, and shipping things that work. Currently open to freelance and full-time opportunities.",
+  tagline: "Software developer building fast, scalable web apps and intuitive UI for real-world systems.",
+  bio: "Based in Salem, Oregon. I build full-stack applications that prioritize performance, clean design, and real-world usability. I focus on turning complex systems into intuitive experiences and delivering solutions that actually get used. Currently working on enterprise and client-facing platforms and open to new opportunities.",
   email: "samsjmelius@gmail.com",
   github: "https://github.com/sam-melius",
   linkedin: "https://linkedin.com/in/sam-melius-oxford"
@@ -16,6 +16,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Sanity"],
     url: "https://www.clutchbowling.com/",
     github: "https://github.com/Sam-Melius/clutch-bowling",
+    image: "/public/clutch-logo-white.png",
     year: "2024",
   },
   {
@@ -25,6 +26,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Sanity"],
     url: "https://reverie-git-main-sam-melius-oxfords-projects.vercel.app/",
     github: "https://github.com/Sam-Melius/reverie",
+    image: "/public/LogoWhiteText.png",
     year: "2025",
   },
   {
@@ -33,6 +35,7 @@ export const projects = [
     description: "Built a high-performance web platform for Reverie Tech using modern frontend technologies, emphasizing responsive design and structured presentation of IT and cybersecurity services. The site was later migrated to WordPress to align with marketing agency requirements and enable more flexible content management.",
     tags: ["WordPress"],
     url: "https://www.reverietech.com/",
+    image: "/public/LogoWhiteText.png",
     year: "2026",
   },
 ];
@@ -67,6 +70,7 @@ export const experience = [
       "Developed web applications, resolved support tickets, and led frontend implementation efforts. Prepared technical materials and presentations for stakeholders and investors.",
   },
 ];
+
 export const skills = [
   "JavaScript", "TypeScript", "HTML", "CSS",
   "React", "Next.js", "Node.js", "Express",

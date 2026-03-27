@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="flex-1 h-px bg-[var(--border)]" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-1 gap-16">
           <div className="reveal">
             <p className="font-sans text-[var(--text-dim)] leading-relaxed mb-8">{personal.bio}</p>
             <div className="space-y-3">
@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="reveal" style={{ transitionDelay: "150ms" }}>
+          {/* <div className="reveal" style={{ transitionDelay: "150ms" }}>
             {submitted ? (
               <div className="border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-8 text-center">
                 <p className="font-mono text-[var(--accent)] text-sm">message_sent.success ✓</p>
@@ -91,7 +91,7 @@ export default function Contact() {
                 </button>
               </form>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
